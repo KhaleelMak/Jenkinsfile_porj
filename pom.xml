@@ -28,6 +28,7 @@
     </dependency>
   </dependencies>
 
+
   <build>
     <finalName>Jenkinsfile_porj</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -64,4 +65,14 @@
       </plugins>
     </pluginManagement>
   </build>
-</project>
+<distributionManagement>
+<snapshotRepository>
+    <id>jenkinsfile-snapshot</id>
+    <url>http://192.168.33.100:8081/nexus/content/repositories/jenkinsfile-snapshot</url>
+  </snapshotRepository> 
+ <repository>
+    <id>Jenkinsfile-Project</id>
+    <url>http://192.168.33.100:8081/nexus/content/repositories/Jenkinsfile-Project</url>
+  </repository>
+</distributionManagement>
+</project>	
